@@ -10,9 +10,8 @@ body{
     font-family: 'Baloo 2', sans-serif;
     width: 98vw;
     height: 100vh;
-    color: white;
-    /* background-image: linear-gradient(rgb(0, 0, 47) , rgb(0, 0, 33)); */
-    background-color: rgb(0, 0, 33);
+    color: rgb(251, 255, 0);
+    background-color: #000000;
 }
 
 header{
@@ -25,7 +24,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: rgb(0, 0, 47);
+    background-color: rgb(27, 27, 27);
     height: 5px;
     text-decoration: none;
 }
@@ -36,7 +35,7 @@ header{
 
 .nav a{
     font-size: 1.3rem;
-    color: white;
+    color: rgb(251, 255, 0);
     margin-left: 64px;
     transition: .3s;
 }
@@ -44,8 +43,9 @@ header{
 .nav a:hover,
 .nav a.active
 {
-    color: #00FFFF;
+    color: #67ff01;
     font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 .left{
@@ -73,22 +73,23 @@ header{
 }
 
 .name{
-    color: #00FFFF;
+    color: rgb(251, 255, 0);
     font-weight: 700;
 }
 
 .photosection img{
-    width: 80%;
+    width: 70%;
+    margin-top: 150px;
 }
 
 #Work{
-    color: #00FFFF;
+    color: rgb(251, 255, 0);
 }
 
 main hr{
     border: 0;
-    background: #8f8fff;
-    height: 1.4px;
+    background: #ffffff;
+    height: 2.4px;
     margin: 20px 70px;
 }
 
@@ -111,9 +112,9 @@ main hr{
 }
 
 .about-img img:hover{
-    color: #00FFFF;
+    color: rgb(251, 255, 0);
     transition: .5s ease;
-    box-shadow: 0 0 2rem #00FFFF;
+    box-shadow: 0 0 2rem;
 }
 
 .aboutHeading{
@@ -141,36 +142,36 @@ main hr{
     width: 48px;
     height: 48px;
     background: transparent;
-    border: 3px solid #00FFFF;
+    border: 3px solid rgb(251, 255, 0);
     border-radius: 50%;
     font-size: 32px;
-    color: #00FFFF;
+    color: rgb(251, 255, 0);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
 
 .social_media a:hover{
-    background-color: #00FFFF;
+    background-color: #67ff01;
     color: rgb(0, 0, 0);
-    box-shadow: 0 0 1rem #00FFFF;
+    box-shadow: 0 0 1rem #67ff01;
 }
 
 span{
-    color: #00FFFF;
+    color: rgb(251, 255, 0);
 }
 
 .button{
     display: inline-block;
     padding: 16px 45px;
-    background: #00FFFF;
+    background: #67ff01;
     border-radius: 50px;
     font-size: 1.5rem;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
 .button:hover{
-    box-shadow: 0 0 16px #00FFFF;
+    box-shadow: 0 0 16px #67ff01;
 }
 
 .education{
@@ -194,30 +195,30 @@ span{
 
 .education-container .education-box{
     flex: 1 1 20rem;
-    background-color: rgb(0, 0, 55);
+    background-color: rgb(36, 36, 36);
     padding: 3rem 2rem 4rem;
     border-radius: 40px;
     text-align: center;
-    border: .30px solid rgb(0, 0, 55);
+    border: .30px solid rgb(36, 36, 36);
     transition: .5s ease;
 }
 
 .education-container .education-box:hover{
-    border-color: #00FFFF;
+    border-color: rgb(251, 255, 0);
     transform: scale(1.0);
 }
 
 .education-box i{
     font-size: 110px;
-    color: #00FFFF;
+    color: rgb(251, 255, 0);
 }
 
 .education-box h3{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .education-box p{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin: 16px 0 48px;
 }
 
@@ -247,15 +248,14 @@ span{
 .skill-con{
     width: 100%;
     padding: 30px 30px 50px;
-    background-color:rgb(0, 0, 55);
+    background-color:rgb(36, 36, 36);
     border-radius: 30px;
-    box-shadow: 0 10px 20px #00FFFF;
 } 
 
 .skill-con *{
     font-family: “Poppins”,sans-serif;
-    color: #00FFFF;
-    font-weight: 500;
+    color: rgb(251, 255, 0);
+    font-weight: 700;
 }
 
 .skill-details{
@@ -267,7 +267,7 @@ span{
 
 .skill-bar{
     position: relative;
-    border: 2px solid #ad62fe;
+    border: 2px solid #67ff01;
     border-radius: 20px;
   
 }
@@ -277,7 +277,7 @@ span{
     width: 0;
     height: 15px;
     border-radius: 10px;
-    background-color: #00FFFF;
+    background-color: #67ff01;
 }
 
 .skill:not(:last-child){
@@ -354,19 +354,14 @@ span{
 .skill_container .skill_box{
     position: relative;
     border-radius: 40px;
-    box-shadow: 0 0 2rem #00FFFF;
     overflow: hidden;
     display: flex;
 }
 
 .skill_box img{
     width: 100%;
-    transition: .5s ease;
 }
 
-.skill_box:hover img{
-    transform: scale(1.1);
-}
 
 .skill_box .skilldetail{
     position: absolute;
@@ -374,18 +369,12 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00ffff7d;
+    background: #00000056;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0 1rem;
-    transform: translateY(100%);
-    transition: .5s ease;
-}
-
-.skill_box:hover .skilldetail{
-    transform: translateY(0);
 }
 
 .skilldetail h3{
@@ -409,7 +398,7 @@ span{
 
 .skilldetail a i{
     font-size: 30px;
-    color: rgb(0, 0, 55);
+    color: rgb(0, 0, 0);
 }
 
 .contact form{
@@ -423,7 +412,6 @@ span{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    box-shadow: #00FFFF;
     border: white;
 }
 
@@ -433,14 +421,14 @@ span{
     padding: 0.8rem;
     font-size: 1.6rem;
     color: white;
-    background-color: rgb(0, 0, 55);
+    background-color: rgb(36, 36, 36);
     border-radius: 1.3rem;
     margin: 1rem 0;
 }
 
 .contact form .form-detail input:hover,
 .contact form textarea:hover{
-    background-color: rgb(0, 2, 135);
+    background-color: rgb(69, 69, 69);
 
 }
 
@@ -455,7 +443,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background-color: rgb(0, 0, 55);
+    background-color: rgb(36, 36, 36);
 }
 
 .footer_text p{
@@ -467,10 +455,6 @@ span{
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background: #00FFFF;
+    background: #67ff01;
     border-radius: 50%;
-}
-
-.down{
-
 }
